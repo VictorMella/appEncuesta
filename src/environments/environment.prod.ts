@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  url: 'http://localhost:5000/encuestafirestore/us-central1',
+  url: 'https://us-central1-encuestafirestore.cloudfunctions.net',
   firebase: {
     apiKey: 'AIzaSyC5AyX9RMb2WY0kfc3080gXNDCAlKCojg8',
     authDomain: 'encuestafirestore.firebaseapp.com',
