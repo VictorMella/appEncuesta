@@ -7,13 +7,15 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { GraficoBarraHorizontalComponent } from './grafico-barra-horizontal/grafico-barra-horizontal.component';
+import { LoadingComponent } from '../components/loading/loading.component';
 
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    GraficoBarraHorizontalComponent
+    GraficoBarraHorizontalComponent,
+    LoadingComponent
     ,
     ],
   imports: [
@@ -24,7 +26,8 @@ import { GraficoBarraHorizontalComponent } from './grafico-barra-horizontal/graf
   ],
   exports: [
     NavbarComponent,
-    GraficoBarraHorizontalComponent
+    GraficoBarraHorizontalComponent,
+    LoadingComponent
   ]
 })
 export class ComponentsModule { }

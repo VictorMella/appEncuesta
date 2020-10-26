@@ -10,7 +10,8 @@ import Swal from 'sweetalert2'
 })
 export class GotyComponent implements OnInit {
 
-  juegos: Game[] = []
+  juegos: Game[] = [];
+  loading = true;
 
   constructor(private gameService: GameService) { }
 
@@ -18,6 +19,7 @@ export class GotyComponent implements OnInit {
     this.gameService.getNominados()
     .subscribe(resp => {
       this.juegos = resp;
+      this.loading = false;
     })
   }
 
