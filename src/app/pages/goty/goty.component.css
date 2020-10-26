@@ -15,6 +15,9 @@
   .card-columns {
     column-count: 1 !important
   }
+  img{
+    height: 250px !important;
+}
 }
 img{
     height: 150px;
